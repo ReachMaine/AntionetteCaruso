@@ -1,0 +1,8 @@
+// styling for media
+
+@media (max-width:980px) {
+  #logo { // make logo bigger at mobile & tablet sizes
+    height: 120px;
+    max-height: 120px!important;
+  }
+}
