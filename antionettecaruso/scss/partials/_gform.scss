@@ -1,8 +1,28 @@
 /* styling for gravity forms */
+.gform_wrapper{
+  .gform_button.button {
+    background-color: $button-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+  }
 
-.gform_button.button {
-  background-color: $button-color;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: 0px;
+   label.gfield_label:empty {
+    display: none;
+  }
+}
+
+ #footer-widgets .footer-widget {
+  .gform_widget {
+    .gform_wrapper{
+      margin-top: 0px;
+      li:before {
+        border: 0px; // take off "bullets"
+
+      }
+      li.gfield:first-child {
+        margin-top: 0px; // make tighter.
+      }
+    }
+  }
 }

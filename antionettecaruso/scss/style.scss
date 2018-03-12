@@ -18,5 +18,24 @@ Template:       Divi
 
 #main-footer {
   background-image: url("./images/footer-and-header-background.jpg");
-}
+  #footer-widgets {
+
+    .footer-widget {
+      margin-bottom: 0px;
+      a {
+        color: $footer-widget-links;
+      }
+      p  {
+       color: #666;
+      }
+      h4.title {
+        color: $footer-widget-titles;
+      }
+    }
+  }
+  #footer-bottom {
+    background-color: $footer-bottom-bkg;
+  }
+} // end footers (#main-footer
+
 @import "partials/gform"; // gravity forms settings
