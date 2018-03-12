@@ -1,0 +1,22 @@
+/*
+Theme Name:     AntoinetteCaruso
+Description:
+Author:         Nicole Ouellette
+Template:       Divi
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+@import "partials/colors"; // colors
+
+// header
+#main-header {
+  background-image: url("./images/footer-and-header-background.jpg");
+}
+
+
+// footer
+
+#main-footer {
+  background-image: url("./images/footer-and-header-background.jpg");
+}
+@import "partials/gform"; // gravity forms settings
