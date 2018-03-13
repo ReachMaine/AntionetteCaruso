@@ -1,9 +1,12 @@
 // styling for media
 
 @media (max-width:980px) { // header mobile breakpoint
-  #logo { // make logo bigger at mobile & tablet sizes
-    height: 120px;
-    max-height: 120px!important;
+  .logo_container {
+    height: 150px;
+    #logo { // make logo bigger at mobile & tablet sizes
+      //height: 150px;
+      max-height: 150px!important;
+    }
   }
   #et_mobile_nav_menu {
     .mobile_menu_bar_toggle:before {
