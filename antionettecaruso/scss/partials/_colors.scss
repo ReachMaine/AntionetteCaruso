@@ -18,3 +18,8 @@ $top-cta-bkg: #4e72b0;
 $top-cta-font: #faf3e6;
 $bottom-cta-bkg: rgba(78,114,176,0.22);
 $button-color: #FFCC66;
+
+.reach-logo:before {
+    	content: url('images/reach-favicon.png');
+    	padding-right: 4px;
+    }
