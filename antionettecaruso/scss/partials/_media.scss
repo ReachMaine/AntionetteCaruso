@@ -1,8 +1,29 @@
 // styling for media
 
-@media (max-width:980px) {
+@media (max-width:980px) { // header mobile breakpoint
   #logo { // make logo bigger at mobile & tablet sizes
     height: 120px;
     max-height: 120px!important;
+  }
+  #et_mobile_nav_menu {
+    .mobile_menu_bar_toggle:before {
+      color: $antcar-bright-blue;
+    }
+    .mobile_menu_bar_toggle {
+      background: white;
+      top: 1px;
+      right: 1px;
+    }
+    .menu-item-has-children>a {
+      background-color: $antcar-soft-blue;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #top-header {
+    #et-info .et-social-icons {
+      display: inline-block; // show facebook at mobile
+    }
   }
 }

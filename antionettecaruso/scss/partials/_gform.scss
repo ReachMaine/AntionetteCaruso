@@ -10,6 +10,10 @@
    label.gfield_label:empty {
     display: none;
   }
+  li.hidden_label input {
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+  }
 }
 
  #footer-widgets .footer-widget {

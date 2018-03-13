@@ -8,6 +8,13 @@ Template:       Divi
 */
 @import "partials/colors"; // colors
 
+// top header
+#top-header {
+  #et-info {
+    line-height: 1.5em;
+  }
+}
+
 // header
 #main-header {
   background-image: url("./images/footer-and-header-background.jpg");
@@ -35,6 +42,9 @@ Template:       Divi
   }
   #footer-bottom {
     background-color: $footer-bottom-bkg;
+    .et-social-icons {
+      display: none;
+    }
   }
 } // end footers (#main-footer
 
