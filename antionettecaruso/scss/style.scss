@@ -20,7 +20,15 @@ Template:       Divi
   background-image: url("./images/footer-and-header-background.jpg");
 }
 
+// content-area
+// single blog post
+.view-full-post {
+  width: 100%;
+  background: $antcar-gold;
+  text-align: center;
+  margin-top: 10px;
 
+}
 // footer
 
 #main-footer {
@@ -47,6 +55,6 @@ Template:       Divi
     }
   }
 } // end footers (#main-footer
-
+@import "partials/masonary_archive";
 @import "partials/gform"; // gravity forms settings
 @import "partials/media"; // size changes

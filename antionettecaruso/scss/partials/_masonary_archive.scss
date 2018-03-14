@@ -1,0 +1,120 @@
+/*
+* Remove sidebar on all archive pages
+* taken from example on https://www.elegantthemes.com/blog/divi-resources/how-to-give-your-divi-archive-pages-a-masonry-layout
+*/
+.search #main-content .container::before,
+.archive #main-content .container::before {
+    display: none;
+}
+.search #left-area,
+.archive #left-area {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+}
+.search #sidebar,
+.archive #sidebar {
+    display: none;
+}
+
+/*
+* Create Mansonory styles for archive pages
+*/
+.search #left-area,
+.archive #left-area {
+    -moz-column-count: 3;
+         column-count: 3;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+}
+
+.archive .et_pb_post > a,
+.search .et_pb_post > a {
+    margin: -20px -20px 10px;
+    display: block;
+}
+
+.search #left-area .et_pb_post,
+.archive #left-area .et_pb_post {
+    overflow: hidden; /* fix for Firefox */
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    width: 100%;
+    padding: 19px;
+    border: 1px solid #a2c594; // #d8d8d8;
+    background-color: #fff;
+    word-wrap: break-word;
+    display: inline-block;
+    float: left; // zig
+    border-radius: 5px;
+}
+
+.search #left-area .et_pb_post h2,
+.archive #left-area .et_pb_post h2 {
+    font-size: 18px;
+}
+
+.search #left-area .et_pb_post.format-link,
+.search #left-area .et_pb_post.format-quote,
+.search #left-area .et_pb_post.format-audio,
+.archive #left-area .et_pb_post.format-link,
+.archive #left-area .et_pb_post.format-quote,
+.archive #left-area .et_pb_post.format-audio{
+    padding: 0;
+}
+
+.archive .et_pb_post .et_pb_image_container,
+.archive .et_pb_post .et_main_video_container,
+.archive .et_pb_post .et_audio_content,
+.archive .et_pb_post .et_pb_slider,
+.search .et_pb_post .et_pb_image_container,
+.search .et_pb_post .et_main_video_container,
+.search .et_pb_post .et_audio_content,
+.search .et_pb_post .et_pb_slider {
+    margin: -20px -20px 10px;
+}
+
+.archive .et_pb_post.format-audio .et_audio_content{
+    margin: 0px -38px 0px;
+}
+
+.archive .et_pb_post .et_pb_slider .et_pb_slide,
+.search .et_pb_post .et_pb_slider .et_pb_slide {
+    min-height: 180px;
+}
+
+.archive .pagination,
+.search .pagination {
+    padding: 20px 0;
+}
+
+/*
+* Media Queries
+*/
+@media screen and (max-width: 980px) {
+    .search #left-area,
+    .archive #left-area {
+        -moz-column-count: 2;
+            column-count: 2;
+        -moz-column-gap: 60px;
+            column-gap: 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .search #left-area,
+    .archive #left-area {
+        -moz-column-count: 1;
+            column-count: 1;
+    }
+    .search .et_pb_post.format-audio .et_audio_content,
+    .archive .et_pb_post.format-audio .et_audio_content{
+        margin: 0;
+    }
+    .search #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls div.mejs-time-rail,
+    .archive #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls div.mejs-time-rail,
+    .search #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total,
+    .archive #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{
+        min-width: 300px!important;
+        width: 300px!important;
+    }
+}
