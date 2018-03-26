@@ -29,6 +29,11 @@ Template:       Divi
   margin-top: 10px;
 
 }
+body:not(.et_pb_pagebuilder_layout) {
+  #content-area {
+    padding-bottom: 40px;
+  }
+}
 // footer
 
 #main-footer {
