@@ -39,9 +39,13 @@ body:not(.et_pb_pagebuilder_layout) {
 #main-footer {
   background-image: url("./images/footer-and-header-background.jpg");
   #footer-widgets {
-
+    padding-top: 30px;
+    padding-bottom: 30px;
     .footer-widget {
       margin-bottom: 0px;
+      .margintop-space {
+        margin-top: 40px;
+      }
       a {
         color: $footer-widget-links;
       }
@@ -49,6 +53,7 @@ body:not(.et_pb_pagebuilder_layout) {
        color: #666;
       }
       h4.title {
+        font-size: 22px;  // 1.2em?
         color: $footer-widget-titles;
       }
     }
