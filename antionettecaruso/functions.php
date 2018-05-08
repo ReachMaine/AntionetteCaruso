@@ -15,5 +15,6 @@ function theme_enqueue_styles() {
 // Your code goes below
 //
 require_once(get_stylesheet_directory().'/custom/divi.php');
+require_once(get_stylesheet_directory().'/custom/woo.php');
 // allow ability to hide field labels
 add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
