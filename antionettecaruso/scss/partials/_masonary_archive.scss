@@ -21,7 +21,7 @@
 * Create Mansonory styles for archive pages
 */
 .search #left-area,
-.archive #left-area {
+.archive.category #left-area { // only category s.t. Woocommerc archives not effected.
     -moz-column-count: 3;
          column-count: 3;
     -moz-column-gap: 60px;
